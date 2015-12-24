@@ -1,0 +1,24 @@
+{
+  "name": "mindstate-plugin-postfix-virtual",
+  "version": "1.0.0",
+  "description": "Mindstate plugin to handle Postfix Virtual config",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hash-bang/mindstate-plugin-postfix-virtual.git"
+  },
+  "keywords": [
+    "mindstate"
+  ],
+  "author": "Matt Carter <m@ttcarter.com> (https://github.com/hash-bang)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hash-bang/mindstate-plugin-postfix-virtual/issues"
+  },
+  "homepage": "https://github.com/hash-bang/mindstate-plugin-postfix-virtual#readme",
+  "dependencies": {
+    "async-chainable": "^1.7.15",
+    "colors": "^1.1.2",
+    "copy": "^0.1.3"
+  }
+}
