@@ -25,7 +25,7 @@ module.exports = {
 				});
 			})
 			.then(function(next) {
-				if (mindstate.program.verbose) console.log(colors.grey('Backup', mindstate.config.postfixVirtual.path));
+				if (mindstate.program.verbose) console.log(colors.blue('[Postfix-Virtual]'), 'Backing up', colors.cyan(mindstate.config.postfixVirtual.path));
 				copy('/etc/postfix/virtual', this.outFile, next);
 			})
 			.end(finish);
