@@ -1,6 +1,6 @@
 {
   "name": "mindstate-plugin-postfix-virtual",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Mindstate plugin to handle Postfix Virtual config",
   "main": "index.js",
   "repository": {

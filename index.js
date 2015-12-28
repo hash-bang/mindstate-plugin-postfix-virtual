@@ -12,7 +12,7 @@ module.exports = {
 			.then(function(next) {
 				// Sanity checks {{{
 				if (!mindstate.config.postfixVirtual.enabled) {
-					if (mindstate.program.verbose) console.log(colors.grey('PostFix-Virtual backup is disabled'));
+					if (mindstate.verbose) console.log(colors.blue('[Postfix-Virtual]'), 'PostFix-Virtual backup is disabled');
 					return next('SKIP');
 				}
 				next();
@@ -25,7 +25,7 @@ module.exports = {
 				});
 			})
 			.then(function(next) {
-				if (mindstate.program.verbose) console.log(colors.blue('[Postfix-Virtual]'), 'Backing up', colors.cyan(mindstate.config.postfixVirtual.path));
+				if (mindstate.verbose) console.log(colors.blue('[Postfix-Virtual]'), 'Backing up', colors.cyan(mindstate.config.postfixVirtual.path));
 				copy('/etc/postfix/virtual', this.outFile, next);
 			})
 			.end(finish);
